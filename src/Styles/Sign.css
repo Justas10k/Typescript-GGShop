@@ -1,0 +1,121 @@
+.UserSign {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserSign-container {
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  min-height: 600px;
+  width: 500px;
+  border-radius: 7px;
+}
+
+.UserSign-container-top {
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  display: flex;
+}
+.UserSign-container-top-links {
+  background-color: #f0f5fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+}
+.UserSign-container-links:hover {
+  background-color: #f9fbfd;
+}
+.UserSign-container-top-links:first-child {
+  border-top-left-radius: 7px;
+}
+
+.UserSign-container-top-links:nth-child(2) {
+  border-top-right-radius: 7px;
+}
+.UserSign-container-text-icon {
+  color: #4e647f;
+}
+.UserSign-container-text-icon.active {
+  color: #006fe8;
+}
+.UserSign-container-top-links.active {
+  background-color: rgb(255, 255, 255);
+}
+
+.UserSign-container-top-icon {
+  stroke-width: 2px;
+  width: 22px;
+  height: 22px;
+  margin: 0px 5px 5px 0px;
+}
+.UserSign-container-bot {
+  width: 100%;
+  height: auto;
+}
+.mini-text {
+  text-align: center;
+  font-size: 14px;
+}
+.mini-link {
+  font-size: 14px;
+}
+@media (max-width: 576px) {
+  .UserSign-container {
+    width: 96%;
+  }
+
+  .UserSign-container-text-icon {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .UserSign-container-top-icon {
+    margin: auto;
+  }
+}
+
+/* user sign / log */
+.form-sign {
+  margin: 0px auto;
+  width: 80%;
+  padding: 80px 0px;
+}
+.form-sign h3 {
+  margin: 0px 0px 40px 0px;
+}
+.sing-label {
+  display: flex;
+  padding: 5px 0px;
+  font-weight: 600;
+}
+.sign-input {
+  display: flex;
+  width: 60%;
+  margin-bottom: 20px;
+  height: 35px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+}
+.sign-button {
+  margin: 40px 0px;
+  width: 100%;
+  height: 40px;
+}
+@media (max-width: 576px) {
+  .form-sign {
+    margin: 0px auto;
+    width: 90%;
+    padding: 80px 0px;
+  }
+}
