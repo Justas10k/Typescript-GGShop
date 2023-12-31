@@ -1,8 +1,38 @@
-// CartContext.js
-import { createContext, useReducer, useContext, useEffect } from "react";
+import React, {
+  createContext,
+  useReducer,
+  useContext,
+  useEffect,
+  ReactNode,
+} from "react";
 
-const CartContext = createContext();
-const cartReducer = (state, action) => {
+type CartItem = {
+  id: number;
+  img: string;
+  description: string;
+  price: number;
+  otherImgs: string[];
+  specs: string;
+  quantity: number;
+};
+
+interface CartState {
+  items: CartItem[];
+}
+
+interface CartAction {
+  type: string;
+  payload: CartItem;
+}
+
+interface CartContextType {
+  cart: CartState;
+  dispatch: React.Dispatch<CartAction>;
+}
+
+const CartContext = createContext<CartContextType | undefined>(undefined);
+
+const cartReducer = (state: CartState, action: CartAction): CartState => {
   switch (action.type) {
     case "ADD_ITEM": {
       const existingItemIndex = state.items.findIndex(
@@ -10,12 +40,10 @@ const cartReducer = (state, action) => {
       );
 
       if (existingItemIndex !== -1) {
-        // If item already exists, replace it with the new one
         const updatedItems = [...state.items];
         updatedItems[existingItemIndex] = action.payload;
         return { ...state, items: updatedItems };
       } else {
-        // If item is not in the cart, add it
         return { ...state, items: [...state.items, action.payload] };
       }
     }
@@ -53,10 +81,15 @@ const cartReducer = (state, action) => {
 
 const CART_STORAGE_KEY = "cart";
 
-const CartProvider = ({ children }) => {
-  const storedCart = JSON.parse(localStorage.getItem(CART_STORAGE_KEY)) || {
-    items: [],
-  };
+interface CartProviderProps {
+  children: ReactNode;
+}
+
+const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
+  const storedCartString = localStorage.getItem(CART_STORAGE_KEY);
+  const storedCart: CartState = storedCartString
+    ? JSON.parse(storedCartString)
+    : { items: [] };
   const [cart, dispatch] = useReducer(cartReducer, storedCart);
 
   useEffect(() => {
@@ -70,7 +103,7 @@ const CartProvider = ({ children }) => {
   );
 };
 
-const useCart = () => {
+const useCart = (): CartContextType => {
   const context = useContext(CartContext);
   if (!context) {
     throw new Error("useCart must be used within a CartProvider");

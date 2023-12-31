@@ -53,7 +53,7 @@ function Register() {
               Register
             </button>
             <p className="mini-text">
-              Already have an account?{" "}
+              Already have an account?
               <Link className="mini-link" to="/login">
                 Log in here.
               </Link>

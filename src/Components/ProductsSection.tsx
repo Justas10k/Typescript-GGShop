@@ -13,7 +13,7 @@ const Products = () => {
             <div key={item.id} className="items-row">
               <Link
                 className="item-container"
-                onClick={() => window.top(0, 0)}
+                // onClick={() => window.top(0, 0)}
                 to={`/products/${item.id}`}
               >
                 <div className="item-image-container">

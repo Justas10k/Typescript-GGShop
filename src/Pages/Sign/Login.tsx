@@ -39,7 +39,7 @@ function LogIn() {
               Register
             </button>
             <p className="mini-text">
-              Don't have an account?{" "}
+              Don't have an account?
               <Link className="mini-link" to="/register">
                 Register
               </Link>

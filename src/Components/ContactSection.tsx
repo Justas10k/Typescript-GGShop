@@ -12,7 +12,7 @@ const ContactSection = () => {
             <div className="p-3">
               <h2>Contact us!</h2>
               <p className="medium-size-p">
-                For all questions, please contact us by e-mail -{" "}
+                For all questions, please contact us by e-mail -
               </p>
               <a className="fw-text text-black" href="#">
                 ggshop@gmail.com

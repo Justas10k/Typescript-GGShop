@@ -20,7 +20,7 @@ function ProductPage() {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const changeImage = (index) => {
+  const changeImage = (index: number) => {
     setCurrentImageIndex(index);
   };
 
@@ -36,7 +36,7 @@ function ProductPage() {
     }
   };
 
-  const calcPrice = (quantity) => {
+  const calcPrice = (quantity: number) => {
     return quantity * item[0].price;
   };
 

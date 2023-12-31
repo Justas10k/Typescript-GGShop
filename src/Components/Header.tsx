@@ -1,5 +1,5 @@
 import "../Styles/Header.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import img11 from "../Img/img11.png";
 
 const Header = () => {
@@ -10,14 +10,14 @@ const Header = () => {
           <div className="header-home-content">
             <h1>Select Your New Perfect Setup</h1>
             <p>
-              Explore our wide range of cutting-edge devices and accessories to
-              curate the ultimate setup that complements your style and enhances
-              your productivity.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              tempora temporibus, sunt sapiente adipisci odio nulla quia illo
+              laborum blanditiis eaque ex accusantium pariatur!
             </p>
 
-            <NavLink to="/Products" className="bt header-home-button button">
+            <Link to="/Products" className="bt header-home-button button">
               SHOP NOW
-            </NavLink>
+            </Link>
           </div>
           <div className="header-home-image">
             <img className="moving-image" src={img11} alt="Headphones" />

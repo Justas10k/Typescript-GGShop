@@ -19,7 +19,7 @@ export const items = [
     price: 86.12,
     otherImgs: [img1, img3, img11],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ export const items = [
       img12,
     ],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const items = [
     price: 79,
     otherImgs: [img3, img12],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ export const items = [
     price: 24.99,
     otherImgs: [img4, img5, img1],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ export const items = [
     price: 25,
     otherImgs: [img5, img8, img1],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ export const items = [
     price: 96.01,
     otherImgs: [img6, img9, img1],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 7,
@@ -86,7 +86,7 @@ export const items = [
     price: 45,
     otherImgs: [img7, img8, img11],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 8,
@@ -95,7 +95,7 @@ export const items = [
     price: 79.83,
     otherImgs: [img8, img12],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 9,
@@ -104,7 +104,7 @@ export const items = [
     price: 254,
     otherImgs: [img9, img3, img12],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
   {
     id: 10,
@@ -113,6 +113,6 @@ export const items = [
     price: 54.13,
     otherImgs: [img10, img11, img12],
     specs:
-      "Hybrid Active Noise Cancelling: New digital noise cancellation technology to quell 95% ambient noise in traffic, offices, and schools.Press the one click button to start the ANC mode.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem at officiis odio quas temporibus, voluptatibus veniam! Quibusdam explicabo aspernatur suscipit est! Atque, provident similique. Quibusdam excepturi provident odit.",
   },
 ];

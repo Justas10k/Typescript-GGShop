@@ -6,9 +6,9 @@ import {
 } from "@tabler/icons-react";
 import logo from "../Img/ggshop.png";
 import EmpthyCart from "../Img/EmpthyCart.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "../Styles/Nav.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useCart } from "../Context/CartContext";
 
 const Nav = () => {
@@ -17,7 +17,6 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [profile, setProfile] = useState(false);
   const [openCart, setOpenCart] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -30,20 +29,6 @@ const Nav = () => {
   const toggleCart = () => {
     setOpenCart(!openCart);
   };
-
-  //scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const navlinks = [
     {
@@ -67,17 +52,17 @@ const Nav = () => {
 
   return (
     <>
-      <nav className={`${scrolled ? "scrolled" : ""}`}>
-        <Link to="/">
+      <nav>
+        <NavLink to="/">
           <img className="logo" src={logo} />
-        </Link>
+        </NavLink>
 
         <ul className="d-none d-lg-flex">
           {navlinks.map((item) => (
             <li key={item.name}>
-              <Link className="link" to={item.link}>
+              <NavLink className="link" to={item.link}>
                 {item.name}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -91,11 +76,12 @@ const Nav = () => {
               <div className="profile">
                 <div className="arrow-up"></div>
                 <div className="profile-container">
-                  <Link className="sign-button" to="/login">
+                  <NavLink className="sign-button" to="/login">
                     Log in
-                  </Link>
+                  </NavLink>
                   <p className="mini-text">
-                    Dont have account? <Link to="/register">Register</Link>
+                    Dont have account?{" "}
+                    <NavLink to="/register">Register</NavLink>
                   </p>
                 </div>
               </div>
@@ -135,9 +121,9 @@ const Nav = () => {
             <ul>
               {navlinks.map((item) => (
                 <li key={item.name}>
-                  <Link className="togglelink" to={item.link}>
+                  <NavLink className="togglelink" to={item.link}>
                     {item.name}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -164,7 +150,7 @@ const Nav = () => {
               <div className="empthy-cart-div">
                 <img className="empthy-cart-img" src={EmpthyCart} />
                 <h3 className="empthy-h-text">Your cart is empty.</h3>
-                <p href="#" className="empthy-p-text">
+                <p className="empthy-p-text">
                   Looks like you have no items in your shopping cart.
                 </p>
               </div>
