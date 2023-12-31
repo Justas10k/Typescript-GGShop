@@ -8,7 +8,7 @@ import { useCart } from "../Context/CartContext";
 
 function ProductPage() {
   const { id } = useParams();
-  const item = items.filter((item) => item.id === parseInt(id));
+  const item = items.filter((item) => item.id === parseInt(id!));
 
   const { dispatch } = useCart();
   const addToCart = () => {

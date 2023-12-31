@@ -172,7 +172,7 @@ const Nav = () => {
                             onClick={() =>
                               dispatch({
                                 type: "REMOVE_ITEM",
-                                payload: { id: cartItem.id },
+                                payload: { ...cartItem }, // Ensure payload has all properties of CartItem
                               })
                             }
                           />
@@ -183,7 +183,7 @@ const Nav = () => {
                               onClick={() =>
                                 dispatch({
                                   type: "DECREASE_QUANTITY",
-                                  payload: { id: cartItem.id },
+                                  payload: { ...cartItem },
                                 })
                               }
                               className="quantity-button-smaller"
@@ -197,7 +197,7 @@ const Nav = () => {
                               onClick={() =>
                                 dispatch({
                                   type: "INCREASE_QUANTITY",
-                                  payload: { id: cartItem.id },
+                                  payload: { ...cartItem },
                                 })
                               }
                               className="
